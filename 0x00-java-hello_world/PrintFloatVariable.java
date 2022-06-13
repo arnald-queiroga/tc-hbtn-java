@@ -1,6 +1,6 @@
 public class PrintFloat {
     public static void main(String[] args) {
-        float valor = 3.14159f;
-        System.out.printf("Valor de pi: %.3f\n", + valor);
+        String texto = "Holberton School" ;
+        System.out.println("\n" + texto + "\n" + texto + "\n" + texto.substring(0,9) + "\n");
     }
 }
