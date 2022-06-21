@@ -1,8 +1,5 @@
 import comida.*;
-import humor.Feliz;
-import humor.Humor;
-import humor.Irritado;
-import humor.MuitoFeliz;
+import humor.*;
 import comida.Comida;
 
 public class Personagem {
