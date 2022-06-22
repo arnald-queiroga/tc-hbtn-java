@@ -1,11 +1,13 @@
 public class Numeros0a99 {
     public static void main(String[] args) {
-        for(int i = 0; i <= 99; i++){
-            if(i < 99){
-                System.out.printf(i + ", ");
+        int num = 0;
+        while (num < 99) {
+            if (num < 98 ) {
+                System.out.print(num + 1 + ", ");
             } else {
-                System.out.printf(i + "\n");
+                System.out.print(num + 1 + " " + "\n");
             }
+            num++;
         }
     }
 }
