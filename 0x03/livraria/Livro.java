@@ -21,7 +21,7 @@ public class Livro {
             this.titulo = titulo;
 
         } else {
-            throw new AutorInvalidoException("Título de livro inválido");
+            throw new AutorInvalidoException("Titulo de livro invalido");
         }
 
     }
