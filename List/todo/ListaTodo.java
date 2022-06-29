@@ -14,13 +14,13 @@ public class ListaTodo {
     }
 
     // Método adicionar tarefa
-    public void adicionarTarefa(Tarefa tarefaInserida) throws Exception {
+    public void adicionarTarefa(Tarefa tarefaInserida){
         for (Tarefa tarefa : tarefas) {
             if (tarefaInserida.getDescricao() == null || tarefaInserida.getDescricao().equals(""))
-                throw new Exception("Descricao de tarefa invalida");
+                throw new IllegalArgumentException("Descricao de tarefa invalida");
 
             if (tarefa.getIdentificador() == tarefaInserida.getIdentificador())
-                throw new Exception("Tarefa com identificador " + tarefaInserida.getIdentificador() + " ja existente na lista");
+                throw new IllegalArgumentException("Tarefa com identificador " + tarefaInserida.getIdentificador() + " ja existente na lista");
         }
         tarefas.add(tarefaInserida);
     }
