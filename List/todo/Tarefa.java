@@ -8,19 +8,10 @@ public class Tarefa {
         this.identificador = identificador;
     }
 
-    public String modificarDescricao(String descricao) throws Exception {
-        return setDescricao(descricao);
-    }
-
-    public String setDescricao(String descricao) throws Exception {
-        if (descricao.isEmpty()){
-            throw new Exception("Descricao de tarefa invalida");
+    public void modificarDescricao(String descricao) {
+        if (descricao == null || descricao.equals("")){
+            throw new IllegalArgumentException("Descricao de tarefa invalida");
         } this.descricao = descricao;
-        return descricao;
-    }
-
-    public String getDescricao() {
-        return descricao;
     }
 
     public boolean isEstahFeita() {
@@ -35,8 +26,8 @@ public class Tarefa {
         return identificador;
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
+    public String getDescricao() {
+        return descricao;
     }
 
 
