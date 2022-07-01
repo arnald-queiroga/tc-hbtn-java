@@ -19,6 +19,22 @@ public class Post {
         return titulo;
     }
 
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setCorpo(String corpo) {
+        this.corpo = corpo;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
     public String getCorpo() {
         return corpo;
     }
@@ -32,4 +48,3 @@ public class Post {
         return "[Autores: " + this.autor + " Categoria=: " + this.categoria + "]";
     }
 } 
-
