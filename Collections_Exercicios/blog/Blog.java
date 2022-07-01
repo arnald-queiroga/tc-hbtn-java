@@ -6,9 +6,9 @@ public class Blog {
     public Blog() {
         posts = new ArrayList<>();
     }
-    public void adicionarPostagem(Post listaPostagem) {
-        posts.add(listaPostagem);
-    }
+   public void adicionarPostagem(Post post){
+        posts.add(post);
+   }
     public Set<String> obterTodosAutores() {
         Set<String> autoresEmLista = new TreeSet<>();
 
@@ -30,5 +30,4 @@ public class Blog {
         } return listaMapCategoria;
     }
 
-}  
-
+} 
