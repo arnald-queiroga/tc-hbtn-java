@@ -1,3 +1,7 @@
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
 public class ConsultaPessoas {
     public static TreeMap<String, TreeSet<Pessoa>> obterPessoasAgrupadasPorCargoEmOrdemReversa(List<Pessoa> pessoas) {
         TreeMap<String, TreeSet<Pessoa>> listaTreeMap = pessoas.stream()
